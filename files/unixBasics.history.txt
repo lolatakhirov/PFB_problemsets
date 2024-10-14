@@ -1,0 +1,16 @@
+  322  git push
+  323  cd ~/PFB_problemsets/files/unix1_problemsets
+  324  ls
+  325  git rm cancer.genes.fasta cuffdiff.txt differentially.expressed.genes.txt first_vi_file.txt git_exercises.txt sorted-cuffdiff.out top100.sorted.cuffdiff.out
+  326  man rm
+  327  man cp
+  328  cd ~/PFB_problemsets/files
+  329  mkdir unixBasics.history.txt
+  330  ls
+  331  rm unixBasics.history.txt
+  332  rm -rf unixBasics.history.txt
+  333  ls
+  334  history
+  335  history > unixBasics.history.txt
+  336  vi unixBasics.history.txt
+  337  history 1000
