@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import sys 
+
+hit_files = []
+
+gene_list = {}
+field_names = ("qseqid", "sseqid", "percid", "alen", "mismat", "gaps","q_start","q_end", "s_start", "s_end", "evalue", "bits")
+
+for hit_file in sys.argv[1:]:
+
+    with open(hit_file, "r") as seq_read:
+        for line in seq_read:
+            line = line.rstrip()
+            if line.startswith("#"):
+                continue
+            gene_list = dict(zip(field_names, line.split("\t")))
+            gene_list["file"] = hit_files
+            hit_files.append(gene_list)
+    print(hit_files)    
